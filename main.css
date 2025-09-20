@@ -11,6 +11,18 @@ body{
     background-color:oklch(94.3% 0.029 294.588);
 }
 
+h1{
+  font-family: "monotalic", monospace ;
+}
+
+h2{
+  font-family: "monotalic", monospace ;
+}
+
+h3{
+  font-family: "monotalic", monospace ;
+}
+
 .container{
     padding: 20px;
 }

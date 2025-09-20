@@ -10,6 +10,18 @@ body{
     margin: 0 auto;
 }
 
+h1{
+  font-family: "monotalic", monospace ;
+}
+
+h2{
+  font-family: "monotalic", monospace ;
+}
+
+h3{
+  font-family: "monotalic", monospace ;
+}
+
 .container{
     padding: 20px;
     
