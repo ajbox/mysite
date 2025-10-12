@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0 auto;
+    background-color:oklch(94.3% 0.029 294.588);
+}
+
+h1{
+  font-family: "monotalic", monospace ;
+}
+
+h2{
+  font-family: "monotalic", monospace ;
+}
+
+h3{
+  font-family: "monotalic", monospace ;
+}
