@@ -13,14 +13,30 @@ body{
 
 h1{
   font-family: "monotalic", monospace ;
+  color: oklch(29.1% 0.149 302.717);
 }
 
 h2{
   font-family: "monotalic", monospace ;
+  color: oklch(43.8% 0.218 303.724);
+}
+
+h2.home{
+  color: oklch(29.1% 0.149 302.717);
 }
 
 h3{
   font-family: "monotalic", monospace ;
+}
+
+h4{
+  font-family: "monotalic", monospace ;
+  font-size: 1.7em;
+  color: oklch(29.1% 0.149 302.717);
+}
+
+a{
+  text-decoration: none;
 }
 
 .container{
@@ -48,6 +64,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15vh;
+    padding-right: 20px;
 }
 
 /* for cards */
@@ -147,6 +164,54 @@ main{
     height: 0.5em;
     width: 0.5em;
   }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  color: white;
+  color: oklch(29.1% 0.149 302.717);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .left h2,
+  .right h2 {
+    margin-bottom: 1em;
+  }
+
+  .textiles .center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
 
   footer{
     height: 20px;

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <title>boop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="piece.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ams1xap.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="works.html">
+                <h1>Annelise Box</h1>
+                </a>
+            </header>
+
+            <main>
+                <div class="image-gallery">
+                    <div class="image-container">
+                        <!-- Close the image -->
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      
+                        <!-- Expanded image -->
+                        <img id="expandedImg" style="width:100%">
+                      
+                        <!-- Image text -->
+                        <div id="imgtext"></div>
+                    </div>
+                    <div class="column">
+                        <img src="workpics/bigbook_Page_1_Image_0002.png" alt="Nature" onclick="myFunction(this);">
+                    </div>
+                      <div class="column">
+                        <img src="workpics/bigbook_Page_3_Image_0001.png" alt="Snow" onclick="myFunction(this);">
+                      </div>
+                      <div class="column">
+                        <img src="workpics/bigbook_Page_4_Image_0002.png" alt="Mountains" onclick="myFunction(this);">
+                      </div>
+                      <div class="column">
+                        <img src="workpics/bigbook_Page_5_Image_0002.png" alt="Lights" onclick="myFunction(this);">
+                      </div>
+                    </div>
+                    
+                    <!-- The expanding image container -->
+                    <div class="image-container">
+                      <!-- Close the image -->
+                      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    
+                      <!-- Expanded image -->
+                      <img id="expandedImg" style="width:100%">
+                    
+                      <!-- Image text 
+                      <div id="imgtext"></div>-->
+                      </div>
+                
+
+               <div class="description">
+                        <div class="title">
+                            <h1>The Big Book of Unsustainable Practices in Cotton Production</h1>
+                        </div>
+                        <div class="year">
+                            <h2>2022</h2>
+                        </div>
+                        <div class="medium">
+                            <h2>Book, 12 x 12 x 4in, 28 pages, Cotton</h2>
+                        </div>
+                        <div class="description-text">
+                            <h3>A book made out of 100% cotton that gives a brief explanation of historical and modern unsustainable practices in cotton production.</h3>
+                        </div>
+                </div>
+             </main>
+        </div>
+
+        <script>
+            function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  //imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+        </script>
+    </body>
+</html>

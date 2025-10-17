@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+    <head>
+        <title>works</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="/images/favicon-copy.png">
+        <link rel="stylesheet" href="https://use.typekit.net/ams1xap.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Annelise Box</h1>
+            </header>
+
+            <main>
+                <div class="left">
+                    <h2 class="home">works</h2>
+                   <!-- <h2>things im thinking about</h2>-->
+                    <a href="about.html">
+                    <h2 class="about">about</h2></a>
+                </div>
+            
+                <div class="right">
+                    <div class="textiles">
+                        <h2>textiles</h2>
+
+                        <div class="center">
+                            <div class="wrapper">
+                            <div class="inner">
+                                <div class="card">
+                                <img src="workpics/IMG_7984.jpg">
+                                <div class="content">
+                                    <a href="bluequilt.html"> <h4>There is no better word than we.</h4> </a>
+                                    <h3>2024</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="workpics/mixedbook_Page_01_Image_0001.png">
+                                <div class="content">
+                                    <a href="mixed.html">
+                                    <h4>MIXED</h4></a>
+                                    <h3>2023</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="workpics/IMG_2005 copy.png">
+                                <div class="content">
+                                    <a href="ticatboc.html">
+                                    <h4>ticatboc</h4></a>
+                                    <h3>2025</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="workpics/IMG_9568.jpeg">
+                                <div class="content">
+                                    <a href="cod.html">
+                                    <h4>cycle of dissapointment</h4></a>
+                                    <h3>2024</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="workpics/bigbook_Page_1_Image_0002.png">
+                                <div class="content"><a href="bigbook.html">
+                                    <h4>The Big Book of Unsustainable Practices in Cotton Production</h4></a>
+                                    <h3>2022</h3>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="map">
+                            <button class="active first"></button>
+                            <button class="second"></button>
+                            <button class="third"></button>
+                            </div>
+                        </div>
+                  
+                    
+                    <!--
+                    <div class="design">
+                        <h2>design</h2>
+
+                        <div class="center">
+                            <div class="wrapper">
+                            <div class="inner">
+                                <div class="card">
+                                <img src="filler-photo.jpeg">
+                                <div class="content">
+                                    <a href="piece-boilerplate.html"> <h1>work</h1> </a>
+                                    <h3>year</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="filler-photo.jpeg">
+                                <div class="content">
+                                    <h1>Custom Website</h1>
+                                    <h3>UI/UX, Design</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="filler-photo.jpeg">
+                                <div class="content">
+                                    <h1>Digital Marketing</h1>
+                                    <h3>UI/UX, Design</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="filler-photo.jpeg">
+                                <div class="content">
+                                    <h1>Digital Marketing</h1>
+                                    <h3>UI/UX, Design</h3>
+                                </div>
+                                </div>
+                                <div class="card">
+                                <img src="filler-photo.jpeg">
+                                <div class="content">
+                                    <h1>Digital Marketing</h1>
+                                    <h3>UI/UX, Design</h3>
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        
+                            
+                            <div class="map">
+                                <button class="active first"></button>
+                                <button class="second"></button>
+                                <button class="third"></button>
+                            </div>-->
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </main>
+
+            
+            <footer>
+                <h2>copyright annelise box</h2>
+            </footer>
+            
+        </div>
+
+        
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const buttonsWrappers = document.querySelectorAll(".map");
+  const slidesContainers = document.querySelectorAll(".inner");
+
+  buttonsWrappers.forEach((buttonsWrapper, index) => {
+    const slides = slidesContainers[index];
+
+    buttonsWrapper.addEventListener("click", (e) => {
+      if (e.target.nodeName === "BUTTON") {
+        Array.from(buttonsWrapper.children).forEach(item => item.classList.remove("active"));
+
+        if (e.target.classList.contains("first")) {
+          slides.style.transform = "translateX(0%)";
+          e.target.classList.add("active");
+        } else if (e.target.classList.contains("second")) {
+          slides.style.transform = "translateX(-33.3333%)";
+          e.target.classList.add("active");
+        } else if (e.target.classList.contains("third")) {
+          slides.style.transform = "translateX(-66.6667%)";
+          e.target.classList.add("active");
+        }
+      }
+    });
+  });
+});
+    </script>
+    </body>
+</html>

@@ -13,12 +13,24 @@ body{
 
 h1{
   font-family: "monotalic", monospace ;
+  color: oklch(29.1% 0.149 302.717);
 }
 
 h2{
   font-family: "monotalic", monospace ;
+  color: oklch(43.8% 0.218 303.724);
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 h3{
   font-family: "monotalic", monospace ;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32vh;
 }

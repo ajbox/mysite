@@ -8,18 +8,22 @@ img{
 
 body{
     margin: 0 auto;
+    background-color:oklch(94.3% 0.029 294.588);
 }
 
 h1{
   font-family: "monotalic", monospace ;
+  color: oklch(29.1% 0.149 302.717);
 }
 
 h2{
   font-family: "monotalic", monospace ;
+  color: oklch(43.8% 0.218 303.724);
 }
 
 h3{
   font-family: "monotalic", monospace ;
+  color: oklch(29.1% 0.149 302.717);
 }
 
 .container{
@@ -40,10 +44,12 @@ main{
 
 .image-gallery{
     width: 60%;
+    height: 40%;
 }
 
 .description{
     width: 40%;
+    padding-right: 30px;
 }
 
 .column {
