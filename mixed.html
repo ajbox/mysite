@@ -71,6 +71,14 @@
         </div>
 
         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+  // Select the first thumbnail image by class or container
+  var firstThumb = document.querySelector(".column img");
+  if (firstThumb) {
+    myFunction(firstThumb); // Call your existing function with the first image element
+  }
+});
+
             function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
