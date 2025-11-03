@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    margin: 0 auto;
+    background-color:oklch(94.3% 0.029 294.588);
+}
+
+h1{
+  font-family: "monotalic", monospace ;
+  color: oklch(29.1% 0.149 302.717);
+}
+
+h2{
+  font-family: "monotalic", monospace ;
+  color: oklch(43.8% 0.218 303.724);
+}
+
+h2.home{
+  color: oklch(29.1% 0.149 302.717);
+}
+
+h3{
+  font-family: "monotalic", monospace ;
+}
+
+h4{
+  font-family: "monotalic", monospace ;
+  font-size: 1.7em;
+  color: oklch(29.1% 0.149 302.717);
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+    padding: 20px;
+}
+
+header{
+    position: sticky;
+    gap: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    display:flex;
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.left{
+    width: 25%;
+    padding-right: 2rem;
+    position: sticky;
+}
+
+.right{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+    padding-right: 20px;
+}
+
+/* for cards */
+.circle {
+    border-radius: 100%;
+    height: 50px; /* Replace $i with a fixed value */
+    width: 50px;
+}
+
+.center {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 68em;
+  }
+  
+  .wrapper > .inner {
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+  }
+  
+  .card {
+    border-radius: 0.5em;
+    /*box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);*/
+
+}
+
+.card > img {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card > .content {
+    background: oklch(90.2% 0.063 306.703);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    padding: 1em;
+    text-align: center;
+    width: 350px;
+}
+
+.card > .content > h1,
+.card > .content > h3 {
+    margin: 0.35em 0;
+}
+
+.card > .content > h1 {
+    color:oklch(29.1% 0.149 302.717);
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.card > .content > h3 {
+    color: oklch(29.1% 0.149 302.717);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+  
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-top: 1em;*/
+  }
+
+  .map > button {
+    all: unset;
+    background: oklch(82.7% 0.119 306.383); /* Result of lighten(#000000, 10) */
+    cursor: pointer;
+    margin: 0 0.125em;
+    position: relative;
+    user-select: none;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+  }
+  .map > button.active:after {
+    background: oklch(71.4% 0.203 305.504);
+    content: "";
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 100%;
+    height: 0.5em;
+    width: 0.5em;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  color: white;
+  color: oklch(29.1% 0.149 302.717);
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+  h2{
+    font-size: 1em;
+  }
+
+  h4{
+    font-size: .8em;
+  }
+
+  img{
+    width: 200px;
+  }
+
+  main{
+    padding-right: 0 !important
+  }
+
+  .left{
+    width: 18%;
+  }
+
+  .right{
+    padding-right: 0px;
+
+  }
+
+  .center {
+    flex-direction: column !important;
+    align-items: center; /* center cards horizontally */
+    height: auto; /* avoid forcing full height */
+  }
+
+  .card > .content {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.wrapper{
+  width: 100% !important;
+    padding-right: 10px;
+}
+  
+  .wrapper, 
+  .wrapper > .inner {
+    flex-direction: column !important;  /* stack cards vertically */
+    flex-wrap: nowrap; /* stacking means no wrap */
+    width: 100% !important; /* full container width */
+  }
+  
+.card > img {
+    width: 80vw;    /* responsive width relative to viewport */
+    max-width: 100%;
+  }
+
+  /* Make card and content size adapt accordingly */
+  .card {
+    width: fit-content;
+  }
+
+  .card > .content {
+  white-space: normal;           /* allow text wrapping */
+  overflow-wrap: break-word;     /* break long words */
+  word-break: break-word;        /* support line break */
+  overflow: visible;             /* do not hide overflowing text */
+  width: 100%;                   /* match container width */
+  box-sizing: border-box;        /* include padding in width */
+  max-width: 100%;               /* prevent overflow */
+  padding: 1em;   
+  }
+
+
+  .map{
+    display: none;
+  }
+
+}
+
+  footer{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20vh;
+  }
